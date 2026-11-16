@@ -1,76 +1,102 @@
-/// Name : Ziab Liaqat
-/// Roll no: 26i-3148
-
-
-
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Chai Haven Cafe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai Haven Cafe | Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Chai Haven cafe</h1>
-        <p>Good food . Good mood</p>
+    <header class="site-header">
+        <p class="small-heading">A LITTLE COMFORT IN EVERY CUP</p>
+        <h1>Chai Haven Cafe</h1>
+        <p>Good food. Good mood.</p>
     </header>
 
     <div class="box">
-        <div class="nav">
-            <b>chai haven cafe</b>
-            <span>Home | Menu | About | contact</span>
-        </div>
-
-        <div class="hero">
-            <div>
-                <h2>Welcome to Chai Haven cafe</h2>
-                <p>Enjoy the best tea and snacks in the town</p>
-                <button>Explore Menu</button>
+        <nav class="nav" aria-label="Main navigation">
+            <a class="brand" href="index.html">Chai Haven Cafe</a>
+            <div class="nav-links">
+                <a href="index.html" aria-current="page">Home</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
             </div>
-            <div>
-                <img src="images/tea.jpg" alt="Steaming cup of tea">
-            </div>
-        </div>
+        </nav>
 
-        <h3>Our Menu</h3>
+        <main>
+            <section class="hero">
+                <div class="hero-text">
+                    <p class="eyebrow">WELCOME TO CHAI HAVEN</p>
+                    <h2>Your happy place for chai and treats.</h2>
+                    <p>Slow down, enjoy a freshly brewed cup of tea, and make room for something sweet. Good food. Good mood.</p>
+                    <a class="button-link" href="menu.html">Explore Menu</a>
+                </div>
+                <div class="hero-image-wrap">
+                    <img class="hero-image" src="images/tea.jpg" alt="A warm cup of spiced tea on a wooden cafe table">
+                </div>
+            </section>
 
-        <table>
-            <tr>
-                <th>ITem</th>
-                <th>Price</th>
-                <th>Category</th>
-            </tr>
-            <tr>
-                <td>Masala chai</td>
-                <td>150</td>
-                <td>Tea</td>
-            </tr>
-            <tr>
-                <td>Green tea</td>
-                <td>150</td>
-                <td>Tea</td>
-            </tr>
-            <tr>
-                <td>Chocklate Cake</td>
-                <td>500</td>
-                <td>Cake</td>
-            </tr>
-            <tr>
-                <td>Cookies</td>
-                <td>500</td>
-                <td>cookies</td>
-            </tr>
-        </table>
+            <section class="content-section">
+                <div class="section-heading">
+                    <p class="eyebrow">A SIMPLE GOOD THING</p>
+                    <h2>Made for your chai moments</h2>
+                    <p>Whether you are catching up with a friend or taking a quiet break, Chai Haven is all about simple comforts.</p>
+                </div>
+                <div class="three-cards">
+                    <article class="info-card">
+                        <span class="card-symbol">01</span>
+                        <h3>Freshly brewed</h3>
+                        <p>Enjoy familiar tea favourites, prepared for a cosy break.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="card-symbol">02</span>
+                        <h3>Sweet treats</h3>
+                        <p>Pair your cup with cake or cookies for a little something extra.</p>
+                    </article>
+                    <article class="info-card">
+                        <span class="card-symbol">03</span>
+                        <h3>Feel at home</h3>
+                        <p>A relaxed cafe idea built around good food and good moods.</p>
+                    </article>
+                </div>
+            </section>
 
-        <br>
-        <div class="center">
-            <button id="orderNowBtn">Order Now</button>
-        </div>
+            <section class="content-section menu-preview">
+                <div class="section-heading">
+                    <p class="eyebrow">A FEW FAVOURITES</p>
+                    <h2>From our menu</h2>
+                </div>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Price (PKR)</th>
+                                <th>Category</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Masala Chai</td><td>150</td><td>Tea</td></tr>
+                            <tr><td>Green Tea</td><td>150</td><td>Tea</td></tr>
+                            <tr><td>Chocolate Cake</td><td>500</td><td>Cake</td></tr>
+                            <tr><td>Cookies</td><td>500</td><td>Snacks</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="center button-row">
+                    <a class="button-link button-outline" href="menu.html">See the full menu</a>
+                    <button id="orderNowBtn" type="button" data-alert="Thank you for visiting Chai Haven Cafe!">Order Now</button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <strong>Chai Haven Cafe</strong>
+            <p>Good food. Good mood.</p>
+            <p class="footer-small">A student website project made with HTML, CSS and JavaScript.</p>
+        </footer>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
